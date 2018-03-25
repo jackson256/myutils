@@ -45,5 +45,14 @@ public class OpUtils {
 		String id = date + rand;
 		return id;
 	}
+	
+	/**
+	 * 判断纯数字
+	 * @param maybeNumeric
+	 * @return
+	 */
+	public static boolean isNumeric(String maybeNumeric) {
+	    return maybeNumeric != null && maybeNumeric.matches("[0-9]+");
+	}
 
 }
